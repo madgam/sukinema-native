@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/usr/src/app
+    tty: true
+    stdin_open: true
+    environment:
+      - REACT_NATIVE_PACKAGER_HOSTNAME=${REACT_NATIVE_PACKAGER_HOSTNAME}
+      - NODE_ENV=production
+      - CHOKIDAR_USEPOLLING=true
+    command: sh -c "cd sukinema && yarn start"
+    ports:
+      - '19000:19000'
+      - '19001:19001'
+      - '19002:19002'
