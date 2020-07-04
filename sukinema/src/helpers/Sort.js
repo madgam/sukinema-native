@@ -1,4 +1,4 @@
-import { SetValue } from './index';
+import SetValue from './SetValue';
 
 const _timeSort = (a, b) => {
   const _a_time = '0000' + String(a.diff_time).slice(-4);

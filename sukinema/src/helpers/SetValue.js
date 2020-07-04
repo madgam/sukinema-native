@@ -1,6 +1,6 @@
-import noimageDrop from '../../assets/noimages.png';
-import noimagePos from '../../assets/no_images_po.jpg';
-import { GetDistance } from './index';
+import noimageDrop from '../assets/img/noimages.png';
+import noimagePos from '../assets/img/no_images_po.jpg';
+import GetDistance from './Distance';
 
 const replaceAll = (str, beforeStr, afterStr) => {
   const reg = new RegExp(beforeStr, 'g');
@@ -70,6 +70,7 @@ const SetValue = (movies, latlong) => {
     );
     const _ratingNum = +'000' + String(e.review * 10 - ((e.review * 10) % 5));
     const ratingClass = 'rating rating_' + _ratingNum.slice(-2);
+
     let drop_path = e.drop_path;
     if (drop_path) {
       drop_path = `https://image.tmdb.org/t/p/w1000_and_h563_face${drop_path}`;

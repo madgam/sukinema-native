@@ -1,5 +1,5 @@
 import React from 'react';
-import { SetValue, HookValue } from '../helpers/index';
+import SetValue from '../helpers/SetValue';
 
 const Modal = ({ movies, latlong, movieID, closeModal }) => {
   const valuedMovies = SetValue(movies, latlong);
