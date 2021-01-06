@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-preset-expo": "~8.1.0",
     "expo-location": "^8.1.0",
     "expo-permissions": "^8.1.0",
